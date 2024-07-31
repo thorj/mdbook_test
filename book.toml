@@ -1,0 +1,6 @@
+[book]
+authors = ["Thorarinn Jonmundsson"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Blog"
