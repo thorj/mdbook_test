@@ -35,4 +35,4 @@ jobs:
       - name: Build the book 
         run: cd $GITHUB_WORKSPACE && mdbook build
       - name: deploy the book
-        run: ssh -i ~/.ssh/deploy deployer@forkbork
+        run: ssh -i ~/.ssh/deploy deployer@146.190.40.129
