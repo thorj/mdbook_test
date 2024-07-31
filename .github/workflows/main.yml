@@ -27,7 +27,7 @@ jobs:
       - name: create the ssh directory
         run: mkdir ~/.ssh && chmod 700 ~/.ssh
       - name: install deploy key
-        run: echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/deploy
+        run: echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/deploy && chmod 600 ~/.ssh/deploy
       - name: known hosts
         run: echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
       - name: Install mdbook
